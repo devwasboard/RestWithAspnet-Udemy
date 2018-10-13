@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "JingSh.Swashbuckle.AspNetCore.Swagger/2.3.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.4",
+          "Microsoft.AspNetCore.Mvc.Formatters.Json": "1.0.4",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -2866,6 +2880,20 @@
           }
         }
       },
+      "Swashbuckle.AspNetCore.Swagger/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.4",
+          "Microsoft.AspNetCore.Mvc.Formatters.Json": "1.0.4",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4337,6 +4365,19 @@
     }
   },
   "libraries": {
+    "JingSh.Swashbuckle.AspNetCore.Swagger/2.3.5": {
+      "sha512": "FhNHYxERj5M2ZQQBtAU1zSvhMyCky0hyX4/d5WKZKOhPN41WlO/BeRUZvkoFbCmDts10UCUoJ1dLqZSDgOurIg==",
+      "type": "package",
+      "path": "jingsh.swashbuckle.aspnetcore.swagger/2.3.5",
+      "files": [
+        "jingsh.swashbuckle.aspnetcore.swagger.2.3.5.nupkg.sha512",
+        "jingsh.swashbuckle.aspnetcore.swagger.nuspec",
+        "lib/net451/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net451/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.xml"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "rMDlyePoxggkmN/qgha1+BR2Uy+dOr38xKCQOPfVNKGY07R2nYJGMTKJFE1XFgwD70RYUNazf2fqutjJF18XgQ==",
       "type": "package",
@@ -7199,6 +7240,19 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/3.0.0": {
+      "sha512": "smrewcRU7HK+3WRZWNYFXVAqD1apyIEwcYEdzVu23tNJek8GQM1V8yqIlj41D8CbYoqaeF+fDhkUDY6FSXUDuw==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/3.0.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net451/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.xml",
+        "swashbuckle.aspnetcore.swagger.3.0.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -11495,8 +11549,10 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "JingSh.Swashbuckle.AspNetCore.Swagger >= 2.3.5",
       "Microsoft.AspNetCore.App >= 2.1.1",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Swashbuckle.AspNetCore.Swagger >= 3.0.0"
     ]
   },
   "packageFolders": {
@@ -11506,11 +11562,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Udemy\\RestWithAspnet-Udemy\\RestWithAspnet_Udemy\\RestWithAspnet_Udemy\\RestWithAspnet_Udemy.csproj",
-      "projectName": "RestWithAspnet_Udemy",
-      "projectPath": "E:\\Udemy\\RestWithAspnet-Udemy\\RestWithAspnet_Udemy\\RestWithAspnet_Udemy\\RestWithAspnet_Udemy.csproj",
+      "projectUniqueName": "E:\\Udemy\\RestWithAspnet-Udemy\\RestWithAspnet_Udemy 01 - Calculator\\RestWithAspnet_Udemy\\RestWithAspnetUdemy_Calculator.csproj",
+      "projectName": "RestWithAspnetUdemy_Calculator",
+      "projectPath": "E:\\Udemy\\RestWithAspnet-Udemy\\RestWithAspnet_Udemy 01 - Calculator\\RestWithAspnet_Udemy\\RestWithAspnetUdemy_Calculator.csproj",
       "packagesPath": "C:\\Users\\wagner.silva\\.nuget\\packages\\",
-      "outputPath": "E:\\Udemy\\RestWithAspnet-Udemy\\RestWithAspnet_Udemy\\RestWithAspnet_Udemy\\obj\\",
+      "outputPath": "E:\\Udemy\\RestWithAspnet-Udemy\\RestWithAspnet_Udemy 01 - Calculator\\RestWithAspnet_Udemy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -11540,6 +11596,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "JingSh.Swashbuckle.AspNetCore.Swagger": {
+            "target": "Package",
+            "version": "[2.3.5, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -11550,6 +11610,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "Swashbuckle.AspNetCore.Swagger": {
+            "target": "Package",
+            "version": "[3.0.0, )"
           }
         },
         "imports": [
