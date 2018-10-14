@@ -10,10 +10,10 @@ namespace RestWithAspnet_Udemy.Controllers
     [ApiController]
     public class CalculatorController : ControllerBase
     {
-       
 
-        // GET api/values/5/5
-        [HttpGet("{firstNumber}/{secondNumber}")]
+
+        // GET api/Calculator/Sum/5/5
+        [HttpGet("Sum/{firstNumber}/{secondNumber}")]
         public IActionResult Sum(string firstNumber, string secondNumber)
         {
             if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
@@ -23,6 +23,47 @@ namespace RestWithAspnet_Udemy.Controllers
 
             }
             return BadRequest( "Invalid input");
+        }
+
+        // GET api/Calculator/Substract/5/5
+        [HttpGet("Substract/{firstNumber}/{secondNumber}")]
+        public IActionResult Substract(string firstNumber, string secondNumber)
+        {
+            if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
+            {
+                var sum = ConvertToDecimal(firstNumber) - ConvertToDecimal(secondNumber);
+                return Ok(sum.ToString());
+
+            }
+            return BadRequest("Invalid input");
+        }
+
+
+        // GET api/Calculator/Multiplication/5/5
+        [HttpGet("Multiplication/{firstNumber}/{secondNumber}")]
+        public IActionResult Multiplication(string firstNumber, string secondNumber)
+        {
+            if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
+            {
+                var sum = ConvertToDecimal(firstNumber) * ConvertToDecimal(secondNumber);
+                return Ok(sum.ToString());
+
+            }
+            return BadRequest("Invalid input");
+        }
+
+
+        // GET api/Calculator/Division/5/5
+        [HttpGet("Division/{firstNumber}/{secondNumber}")]
+        public IActionResult Division(string firstNumber, string secondNumber)
+        {
+            if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
+            {
+                var sum = ConvertToDecimal(firstNumber) / ConvertToDecimal(secondNumber);
+                return Ok(sum.ToString());
+
+            }
+            return BadRequest("Invalid input");
         }
 
         private decimal ConvertToDecimal(string vNumber)
