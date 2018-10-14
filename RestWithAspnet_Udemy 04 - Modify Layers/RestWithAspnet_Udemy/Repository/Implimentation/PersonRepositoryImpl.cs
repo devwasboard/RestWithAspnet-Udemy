@@ -4,16 +4,16 @@ using System.Linq;
 using RestWithAspnet_Udemy.Model;
 using RestWithAspnet_Udemy.Model.Context;
 
-namespace RestWithAspnet_Udemy.Services.Implimentation
+namespace RestWithAspnet_Udemy.Repository.Implimentation
 {
-    public class PersonServiceImpl : IPersonService
+    public class PersonRepositorympl : IPersonRepository
     {
         /// <summary>
         /// variable responsible  in connect MySql
         /// </summary>
         private MySQLContext _context;
 
-        public PersonServiceImpl(MySQLContext context)
+        public PersonRepositorympl(MySQLContext context)
         {
             _context = context;
         }
@@ -103,7 +103,7 @@ namespace RestWithAspnet_Udemy.Services.Implimentation
         /// </summary>
         /// <param name="id"></param>
         /// <returns>bool</returns>
-        private bool Exist(long? id)
+        public bool Exist(long? id)
         {
             return _context.Persons.Any(p => p.Id.Equals(id));
         }
