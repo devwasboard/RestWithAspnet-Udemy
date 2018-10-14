@@ -8,13 +8,20 @@ namespace RestWithAspnet_Udemy.Services.Implimentation
 {
     public class PersonServiceImpl : IPersonService
     {
+        /// <summary>
+        /// variable responsible  in connect MySql
+        /// </summary>
         private MySQLContext _context;
 
         public PersonServiceImpl(MySQLContext context)
         {
             _context = context;
         }
-
+        /// <summary>
+        /// Create person in db persons
+        /// </summary>
+        /// <param name="person"></param>
+        /// <returns>person</returns>
         public Person Create(Person person)
         {
             try
@@ -29,7 +36,10 @@ namespace RestWithAspnet_Udemy.Services.Implimentation
             }
             return person;
         }
-
+        /// <summary>
+        /// Delete person in db person
+        /// </summary>
+        /// <param name="id"></param>
         public void Delet(long id)
         {
             var result = _context.Persons.SingleOrDefault(p => p.Id.Equals(id));
@@ -48,18 +58,29 @@ namespace RestWithAspnet_Udemy.Services.Implimentation
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// List all persons in db persons.
+        /// </summary>
+        /// <returns>List<Person></returns>
         public List<Person> FindAll()
         {
             return _context.Persons.ToList();
         }
-
+        /// <summary>
+        /// List person find by id.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Person</returns>
         public Person FindById(long id)
         {
             return _context.Persons.SingleOrDefault(p => p.Id.Equals(id));
   
         }
-
+        /// <summary>
+        /// Upadate db persons 
+        /// </summary>
+        /// <param name="person"></param>
+        /// <returns>Person after update</returns>
         public Person Update(Person person)
         {
             if (!Exist(person.Id)) return new Person();
@@ -77,7 +98,11 @@ namespace RestWithAspnet_Udemy.Services.Implimentation
             }
             return person;
         }
-
+        /// <summary>
+        /// Verify person exists in db persons
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>bool</returns>
         private bool Exist(long? id)
         {
             return _context.Persons.Any(p => p.Id.Equals(id));

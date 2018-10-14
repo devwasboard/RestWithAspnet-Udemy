@@ -4,7 +4,9 @@ using RestWithAspnet_Udemy.Services.Implimentation;
 
 namespace RestWithAspnet_Udemy.Controllers
 {
-    [Route("api/[controller]")]
+    [ApiVersion("1")]
+    [Route("api/[controller]/v{version:apiVersion}")]
+    //[Route("api/[controller]")]
     [ApiController]
     public class PersonsController : ControllerBase
     {

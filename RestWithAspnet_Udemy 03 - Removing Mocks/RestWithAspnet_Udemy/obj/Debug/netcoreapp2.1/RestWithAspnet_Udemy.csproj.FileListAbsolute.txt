@@ -39,3 +39,4 @@ E:\Udemy\RestWithAspnet-Udemy\RestWithAspnet_Udemy 03 - Removing Mocks\RestWithA
 E:\Udemy\RestWithAspnet-Udemy\RestWithAspnet_Udemy 03 - Removing Mocks\RestWithAspnet_Udemy\obj\Debug\netcoreapp2.1\RestWithAspnet_Udemy.RazorTargetAssemblyInfo.cache
 E:\Udemy\RestWithAspnet-Udemy\RestWithAspnet_Udemy 03 - Removing Mocks\RestWithAspnet_Udemy\obj\Debug\netcoreapp2.1\RestWithAspnet_Udemy.dll
 E:\Udemy\RestWithAspnet-Udemy\RestWithAspnet_Udemy 03 - Removing Mocks\RestWithAspnet_Udemy\obj\Debug\netcoreapp2.1\RestWithAspnet_Udemy.pdb
+E:\Udemy\RestWithAspnet-Udemy\RestWithAspnet_Udemy 03 - Removing Mocks\RestWithAspnet_Udemy\obj\Debug\netcoreapp2.1\RestWithAspnet_Udemy.csprojAssemblyReference.cache

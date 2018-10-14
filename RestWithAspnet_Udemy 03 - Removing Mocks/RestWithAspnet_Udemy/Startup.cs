@@ -26,6 +26,10 @@ namespace RestWithAspnet_Udemy
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+
+            //Configure version Api -> https://github.com/microsoft/aspnet-api-Versioning/wiki/Versioning-via-the-URL-Path
+            services.AddApiVersioning();
+
             //Dependency injection
             services.AddScoped<IPersonService, PersonServiceImpl>();
         }
