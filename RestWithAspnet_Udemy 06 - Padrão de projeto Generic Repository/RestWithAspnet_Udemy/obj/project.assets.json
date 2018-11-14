@@ -12352,11 +12352,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Udemy\\RestWithAspnet-Udemy\\RestWithAspnet_Udemy 05 - Migrations\\RestWithAspnet_Udemy\\RestWithAspnet_Udemy.csproj",
+      "projectUniqueName": "E:\\Udemy\\RestWithAspnet-Udemy\\RestWithAspnet_Udemy 06 - Padrão de projeto Generic Repository\\RestWithAspnet_Udemy\\RestWithAspnet_Udemy.csproj",
       "projectName": "RestWithAspnet_Udemy",
-      "projectPath": "E:\\Udemy\\RestWithAspnet-Udemy\\RestWithAspnet_Udemy 05 - Migrations\\RestWithAspnet_Udemy\\RestWithAspnet_Udemy.csproj",
+      "projectPath": "E:\\Udemy\\RestWithAspnet-Udemy\\RestWithAspnet_Udemy 06 - Padrão de projeto Generic Repository\\RestWithAspnet_Udemy\\RestWithAspnet_Udemy.csproj",
       "packagesPath": "C:\\Users\\wagner.silva\\.nuget\\packages\\",
-      "outputPath": "E:\\Udemy\\RestWithAspnet-Udemy\\RestWithAspnet_Udemy 05 - Migrations\\RestWithAspnet_Udemy\\obj\\",
+      "outputPath": "E:\\Udemy\\RestWithAspnet-Udemy\\RestWithAspnet_Udemy 06 - Padrão de projeto Generic Repository\\RestWithAspnet_Udemy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

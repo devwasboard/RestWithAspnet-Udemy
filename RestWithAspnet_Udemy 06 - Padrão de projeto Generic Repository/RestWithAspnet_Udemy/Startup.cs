@@ -16,6 +16,7 @@ using RestWithAspnet_Udemy.Repository.Implimentation;
 
 using System;
 using System.Collections.Generic;
+using RestWithAspnet_Udemy.Repository.Generic;
 
 namespace RestWithAspnet_Udemy
 {
@@ -70,6 +71,7 @@ namespace RestWithAspnet_Udemy
             //Dependency injection
             services.AddScoped<IPersonBusiness, PersonBusinessImpl>();
             services.AddScoped<IPersonRepository, PersonRepositorympl>();
+            services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
